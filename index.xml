@@ -1,8 +1,8 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>Сервісний центр електроніки</title>
+        <title>Сервісний центр електроніки в місті Сміла</title>
         <link>https://TacmLtd.github.io/</link>
-        <description>Професійний ремонт електроніки у вашому місті</description>
+        <description>Професійний ремонт електроніки у вашому місті Сміла</description>
         <generator>Hugo -- gohugo.io</generator><language>uk-UA</language>
             <atom:link href="https://TacmLtd.github.io/index.xml" rel="self" type="application/rss+xml" />
         </channel>
