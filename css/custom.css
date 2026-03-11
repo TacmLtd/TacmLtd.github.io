@@ -4,3 +4,22 @@
     padding: 14px 12px !important;
   }
 }
+/* Липкое верхнее меню */
+#header-desktop,
+#header-mobile {
+  position: sticky !important;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Чтобы меню не сливалось с контентом */
+#header-desktop,
+#header-mobile {
+  background: #fff;
+}
+
+/* Небольшая тень для удобства */
+#header-desktop,
+#header-mobile {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
