@@ -1,4 +1,10 @@
-<meta name="viewport" content="width=device-width, initial-scale=1">Про нас - Сервісний центр електроніки в місті Сміла<meta name="Description" content="Професійний ремонт електроніки у вашому місті Сміла"><meta property="og:url" content="https://TacmLtd.github.io/about/">
+<!DOCTYPE html>
+<html lang="uk-UA">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>Про нас - Сервісний центр електроніки в місті Сміла</title><meta name="Description" content="Професійний ремонт електроніки у вашому місті Сміла"><meta property="og:url" content="https://TacmLtd.github.io/about/">
   <meta property="og:site_name" content="Сервісний центр електроніки в місті Сміла">
   <meta property="og:title" content="Про нас">
   <meta property="og:description" content="Про наш сервісний центр Ми працюємо з 1995 року та спеціалізуємось на ремонті електроніки.
@@ -33,17 +39,31 @@
                 "name": "xxxx"
             },"description": ""
     }
-    </script><header class="desktop" id="header-desktop">
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script>
+          const query = window.matchMedia('(prefers-color-scheme: dark)');
+          function applyTheme() {
+            let theme = window.localStorage?.getItem('theme') || 'auto';
+            let isDark = theme === 'dark' || (theme === 'auto' && query.matches);
+            document.body.setAttribute('theme', isDark? 'dark' : 'light');
+            document.body.setAttribute('cfg-theme', theme);
+          }
+
+          applyTheme();
+          query.addEventListener('change', applyTheme);
+        </script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
     <div class="header-wrapper">
         <div class="header-title">
             <a href="/" title="Сервісний центр електроніки в місті Сміла"><img
         class="lazyload logo"
         src="/svg/loading.min.svg"
-        data-src="/images/logo3.png"
-        data-srcset="/images/logo3.png, /images/logo3.png 1.5x, /images/logo3.png 2x"
+        data-src="/images/logo2.png"
+        data-srcset="/images/logo2.png, /images/logo2.png 1.5x, /images/logo2.png 2x"
         data-sizes="auto"
-        alt="/images/logo3.png"
-        title="/images/logo3.png" />СЦ ТАСМ Лтд</a>
+        alt="/images/logo2.png"
+        title="/images/logo2.png" />СЦ ТАСМ Лтд</a>
         </div>
         <div class="menu">
             <div class="menu-inner"><a class="menu-item" href="/"> Головна </a><a class="menu-item" href="/services/"> Послуги </a><a class="menu-item" href="/prices/"> Ціни </a><a class="menu-item active" href="/about/"> Про нас </a><a class="menu-item" href="/contacts/"> Контакти </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
@@ -58,11 +78,11 @@
                 <a href="/" title="Сервісний центр електроніки в місті Сміла"><img
         class="lazyload logo"
         src="/svg/loading.min.svg"
-        data-src="/images/logo3.png"
-        data-srcset="/images/logo3.png, /images/logo3.png 1.5x, /images/logo3.png 2x"
+        data-src="/images/logo2.png"
+        data-srcset="/images/logo2.png, /images/logo2.png 1.5x, /images/logo2.png 2x"
         data-sizes="auto"
-        alt="/images/logo3.png"
-        title="/images/logo3.png" />СЦ ТАСМ Лтд</a>
+        alt="/images/logo2.png"
+        title="/images/logo2.png" />СЦ ТАСМ Лтд</a>
             </div>
             <div class="menu-toggle" id="menu-toggle-mobile">
                 <span></span><span></span><span></span>
@@ -72,10 +92,12 @@
                 <i class="fas fa-adjust" aria-hidden="true"></i>
             </a></div>
     </div>
-</header><div class="page single special"><h1 class="single-title animate__animated animate__pulse animate__faster">Про нас</h1><div class="content" id="content"><h1 id="про-наш-сервісний-центр">Про наш сервісний центр</h1>
+</header><main class="main">
+                <div class="container"><div class="page single special"><h1 class="single-title animate__animated animate__pulse animate__faster">Про нас</h1><div class="content" id="content"><h1 id="про-наш-сервісний-центр">Про наш сервісний центр</h1>
 <p>Ми працюємо з 1995 року та спеціалізуємось на ремонті електроніки.<br>
 Наша команда — досвідчені фахівці з гарантією якості.</p>
-</div></div><footer class="footer">
+</div></div></div>
+            </main><footer class="footer">
         <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.155.3">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 1.0.0"><i class="far fa-kiss-wink-heart" aria-hidden="true"></i> LoveIt</a>
                 </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright" aria-hidden="true"></i><span itemprop="copyrightYear">2022 - 2026</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">xxxx</a></span></div>
         </div>
@@ -104,7 +126,8 @@
 }
 </style>
 
-<a href="tel:+380973829930" class="floating-call-btn">📞</a><style>
+<a href="tel:+380973829930" class="floating-call-btn">📞</a>
+<style>
 
 .messenger-btn {
 position: fixed;
@@ -141,4 +164,18 @@ background: #2AABEE;
 <a href="https://t.me/Tacm_Smila"
    class="messenger-btn telegram-btn"
    target="_blank">✈️</a>
-<script src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.2/sharer.min.js"></script><script>window.config={"comment":{}};</script><script src="/js/theme.min.js"></script><link rel="stylesheet" href="/css/custom_v2.css">
+
+
+
+</div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up" aria-hidden="true"></i>
+            </a>
+        </div>
+
+        <div id="fixed-buttons-hidden"><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment" aria-hidden="true"></i>
+            </a>
+        </div><script src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.2/sharer.min.js"></script><script>window.config={"comment":{}};</script><script src="/js/theme.min.js"></script></body>
+</html>
