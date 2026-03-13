@@ -1,11 +1,25 @@
+
+/* ===== Мобильная шапка ===== */
+
 @media (max-width: 768px) {
 
+  /* уменьшаем логотип */
   #header-mobile img {
     max-height: 28px !important;
+    width: auto !important;
   }
 
+  /* уменьшаем название сайта */
+  #header-mobile .header-title,
   #header-mobile .header-title a {
     font-size: 18px !important;
+    font-weight: 600 !important;
+  }
+
+  /* уменьшаем высоту шапки */
+  #header-mobile {
+    padding-top: 6px !important;
+    padding-bottom: 6px !important;
   }
 
 }
