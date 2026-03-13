@@ -1,5 +1,4 @@
-
-/* ===== Мобильная шапка ===== */
+/* ===== Улучшение мобильной шапки ===== */
 
 @media (max-width: 768px) {
 
@@ -9,8 +8,7 @@
     width: auto !important;
   }
 
-  /* уменьшаем название сайта */
-  #header-mobile .header-title,
+  /* уменьшаем текст названия */
   #header-mobile .header-title a {
     font-size: 18px !important;
     font-weight: 600 !important;
@@ -18,8 +16,26 @@
 
   /* уменьшаем высоту шапки */
   #header-mobile {
-    padding-top: 6px !important;
-    padding-bottom: 6px !important;
+    padding-top: 4px !important;
+    padding-bottom: 4px !important;
+  }
+
+  /* увеличиваем кнопку меню */
+  #header-mobile .menu-toggle {
+    font-size: 26px !important;
+  }
+
+}
+
+#header-mobile {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+@media (max-width:768px){
+
+  .home-buttons a{
+    font-size:18px;
+    padding:14px 20px;
   }
 
 }
