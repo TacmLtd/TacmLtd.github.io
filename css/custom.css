@@ -1,41 +1,118 @@
-/* ===== Улучшение мобильной шапки ===== */
+/* ===== Мобильная шапка ===== */
 
 @media (max-width: 768px) {
-
-  /* уменьшаем логотип */
   #header-mobile img {
     max-height: 28px !important;
     width: auto !important;
   }
 
-  /* уменьшаем текст названия */
   #header-mobile .header-title a {
     font-size: 18px !important;
     font-weight: 600 !important;
   }
 
-  /* уменьшаем высоту шапки */
   #header-mobile {
     padding-top: 4px !important;
     padding-bottom: 4px !important;
   }
 
-  /* увеличиваем кнопку меню */
   #header-mobile .menu-toggle {
     font-size: 26px !important;
   }
-
 }
 
 #header-mobile {
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
-@media (max-width:768px){
+/* ===== Кнопки на первом экране ===== */
 
-  .home-buttons a{
-    font-size:18px;
-    padding:14px 20px;
+@media (max-width: 768px) {
+  .home-buttons a {
+    font-size: 18px;
+    padding: 14px 20px;
+  }
+}
+
+/* ===== Блок брендов ===== */
+
+.brands-grid {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)) !important;
+  gap: 20px !important;
+  margin-top: 20px !important;
+}
+
+.brand-card {
+  background: #fff !important;
+  border: 1px solid #ddd !important;
+  border-radius: 12px !important;
+  height: 120px !important;
+  padding: 14px !important;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  overflow: hidden !important;
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+}
+
+.brand-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+  transition: all 0.2s ease;
+}
+
+.brand-card img,
+img.brand-logo,
+.brand-logo {
+  max-width: 90% !important;
+  max-height: 80% !important;
+  width: auto !important;
+  height: auto !important;
+  object-fit: contain !important;
+  display: block !important;
+  margin: 0 auto !important;
+}
+
+.brand-name {
+  font-size: 15px;
+  line-height: 1.35;
+  font-weight: 600;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .brands-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 14px !important;
   }
 
+  .brand-card {
+    height: 100px !important;
+    padding: 10px !important;
+  }
+
+  .brand-name {
+    font-size: 14px;
+  }
+}
+
+details {
+  margin-top: 30px;
+}
+
+details summary {
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  details summary {
+    font-size: 22px;
+    line-height: 1.3;
+  }
 }

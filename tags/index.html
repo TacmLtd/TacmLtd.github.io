@@ -171,7 +171,18 @@ background: #2AABEE;
  "priceRange": "$$"
 }
 </script>
-</div>
+
+ /* Подключаем lightbox */
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const lightbox = GLightbox({
+    selector: ".glightbox"
+  });
+});
+</script></div>
 
         <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
                 <i class="fas fa-arrow-up" aria-hidden="true"></i>
