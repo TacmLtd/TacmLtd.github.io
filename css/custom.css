@@ -166,36 +166,125 @@ details summary {
   padding: 40px 20px;
   border-radius: 16px;
 }
+ 
 
-/* ===== Акцентная линия под заголовками секций ===== */
-/*
-.section-services h2,
-.section-steps h2,
-.section-advantages h2,
-.section-reviews h2,
-.section-brands h2,
-.section-contacts h2, 
-.section-works h2,
-.section-faq h2 {
-  position: relative;
-  margin-bottom: 28px;
+.service-card {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 10px;
+  box-sizing: border-box;
 }
 
-.section-services h2::after,
-.section-steps h2::after,
-.section-advantages h2::after,
-.section-reviews h2::after,
-.section-brands h2::after,
-.section-contacts h2::after,
-.section-works h2::after,
-.section-faq h2::after {
-  content: "";
+
+
+.services-grid,
+.steps-grid,
+.advantages-grid,
+.reviews-grid,
+.works-grid,
+.contacts-grid,
+.faq-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.services-grid,
+.steps-grid,
+.advantages-grid,
+.works-grid,
+.reviews-grid,
+.faq-grid {
+  display: grid;
+  gap: 20px;
+  margin-top: 20px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.service-card,
+.step-card,
+.advantage-card,
+.work-card,
+.review-card,
+.faq-card {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+  background: #fff;
+  box-sizing: border-box;
+}
+
+.step-number {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.advantage-card {
+  text-align: center;
+}
+
+.advantage-icon {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.work-card {
+  overflow: hidden;
+  padding: 0;
+}
+
+.work-image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
   display: block;
-  width: 60px;
-  height: 4px;
-  margin-top: 10px;
-  border-radius: 3px;
-  background: #2d89ef;
 }
-*/
 
+.work-content {
+  padding: 16px;
+}
+
+.faq-card {
+  padding: 15px;
+}
+
+.faq-card p,
+.work-content p,
+.step-card p,
+.advantage-card p,
+.review-card p {
+  margin-bottom: 0;
+}
+
+.step-card h3,
+.advantage-card h3,
+.work-content h3,
+.review-card h3 {
+  margin-top: 0;
+}
+
+@media (max-width: 992px) {
+  .services-grid,
+  .steps-grid,
+  .advantages-grid,
+  .works-grid,
+  .reviews-grid,
+  .faq-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .services-grid,
+  .steps-grid,
+  .advantages-grid,
+  .works-grid,
+  .reviews-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .faq-grid {
+    grid-template-columns: 1fr;
+  }
+}
