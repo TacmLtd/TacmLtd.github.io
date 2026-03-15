@@ -288,12 +288,3 @@ details summary {
     grid-template-columns: 1fr;
   }
 }
-
-.service-card,
-.step-card,
-.advantage-card,
-.work-card,
-.review-card,
-.faq-card {
-  min-width: 0;
-}
