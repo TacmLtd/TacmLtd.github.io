@@ -116,3 +116,86 @@ details summary {
     line-height: 1.3;
   }
 }
+
+/* ===== Пастельные фоны секций ===== */
+
+.section-services {
+  background: #f5f9ff;
+  padding: 40px 20px;
+  border-radius: 16px;
+}
+
+.section-steps {
+  background: #f5fff7;
+  padding: 40px 20px;
+  border-radius: 16px;
+}
+
+.section-advantages {
+  background: #f8f8f8;
+  padding: 40px 20px;
+  border-radius: 16px;
+}
+
+.section-reviews {
+  background: #fffdf5;
+  padding: 40px 20px;
+  border-radius: 16px;
+}
+
+.section-brands {
+  background: #d1bed1;
+  padding: 40px 20px;
+  border-radius: 16px;
+}
+
+.section-works {
+  background: #f7fbff;
+  padding: 40px 20px;
+  border-radius: 16px;
+}
+
+.section-contacts {
+  background: #f9f9ff;
+  padding: 40px 20px;
+  border-radius: 16px;
+}
+
+.section-faq {
+  background:  #f5f9ff;
+  padding: 40px 20px;
+  border-radius: 16px;
+}
+
+/* ===== Акцентная линия под заголовками секций ===== */
+/*
+.section-services h2,
+.section-steps h2,
+.section-advantages h2,
+.section-reviews h2,
+.section-brands h2,
+.section-contacts h2, 
+.section-works h2,
+.section-faq h2 {
+  position: relative;
+  margin-bottom: 28px;
+}
+
+.section-services h2::after,
+.section-steps h2::after,
+.section-advantages h2::after,
+.section-reviews h2::after,
+.section-brands h2::after,
+.section-contacts h2::after,
+.section-works h2::after,
+.section-faq h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  margin-top: 10px;
+  border-radius: 3px;
+  background: #2d89ef;
+}
+*/
+
