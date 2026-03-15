@@ -275,7 +275,7 @@ details summary {
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 512px) {
   .services-grid,
   .steps-grid,
   .advantages-grid,
@@ -287,4 +287,13 @@ details summary {
   .faq-grid {
     grid-template-columns: 1fr;
   }
+}
+
+.service-card,
+.step-card,
+.advantage-card,
+.work-card,
+.review-card,
+.faq-card {
+  min-width: 0;
 }
