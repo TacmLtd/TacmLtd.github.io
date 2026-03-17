@@ -175,6 +175,17 @@ details summary {
   box-sizing: border-box;
 }
 
+/*   можно чуть улучшить кнопку внутри карточки.   */
+.service-card a {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.service-card a:hover {
+  text-decoration: underline;
+}
 
 
 .services-grid,
@@ -357,3 +368,70 @@ details summary {
   transform: translateY(-1px);
   box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
 }
+
+/*    Улучшаем Усі послуги!      *,
+
+.service-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.service-card h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  margin-bottom: 0;
+  line-height: 1.45;
+}
+
+.service-link {
+  display: inline-block;
+  margin-top: 14px;
+  align-self: flex-start;
+  padding: 10px 16px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  border: 1px solid #ccc;
+  background: #fff;
+  color: #222;
+  transition: all 0.2s ease;
+}
+
+.service-link:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+}
+
+.services-cta {
+  margin-top: 32px;
+  padding: 24px 20px;
+  border: 1px solid #ddd;
+  border-radius: 14px;
+  background: #fff;
+  text-align: center;
+}
+
+.services-cta h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.services-cta p {
+  margin-bottom: 16px;
+}
+
+@media (max-width: 768px) {
+  .services-cta {
+    margin-top: 24px;
+    padding: 18px 14px;
+  }
+
+  .service-link {
+    padding: 9px 14px;
+  }
+}
+
