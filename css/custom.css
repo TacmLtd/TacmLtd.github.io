@@ -167,13 +167,34 @@ details summary {
   border-radius: 16px;
 }
  
+/* Цвет фона карточек в ПОСЛУГИ */
+/*
+.service-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: #eef9ee;
+  border: 1px solid #d8ead8;
+  border-radius: 12px;
+  padding: 20px;
+}
+.service-card h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  margin-bottom: 0;
+  line-height: 1.45;
+}  */
 
 .service-card {
   border: 1px solid #ddd;
   padding: 20px;
   border-radius: 10px;
   box-sizing: border-box;
-}
+} 
+
 
 /*   можно чуть улучшить кнопку внутри карточки.   */
 .service-card a {
@@ -369,7 +390,7 @@ details summary {
   box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
 }
 
-/*    Улучшаем Усі послуги!      *,
+/*    Улучшаем Усі послуги!      */
 
 .service-card {
   display: flex;
@@ -435,3 +456,16 @@ details summary {
   }
 }
 
+.all-services-page .service-card {
+  background: #eef9ee !important;
+  border: 1px solid #d8ead8 !important;
+}
+
+.all-services-page .services-grid {
+  margin-top: 20px;
+}
+
+.all-services-page .services-cta {
+  background: #f6fbf6;
+  border: 1px solid #d8ead8;
+}
